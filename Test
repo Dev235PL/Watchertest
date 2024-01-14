@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shake Effect</title>
+  <style>
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
+    .shake-element {
+      display: inline-block;
+      animation: shake 0.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="shake-element">Shaking Element</div>
+</body>
+</html>
